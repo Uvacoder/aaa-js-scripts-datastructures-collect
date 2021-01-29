@@ -1,2 +1,2 @@
-run = "node sets.js"
+run = "node queue.js"
 language = "node"
