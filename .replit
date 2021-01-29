@@ -1,2 +1,2 @@
-run = "node stack.js"
+run = "node sets.js"
 language = "node"
