@@ -10,19 +10,19 @@ var word = "racecar"
 var rword = ""
 
 // put letters in stack
-for(var i=0; i<word.length; i++){
+for (var i = 0; i < word.length; i++) {
   letters.push(word[i])
 }
 
 // pop off the stack
-for(var i=0; i<word.length; i++){
+for (var i = 0; i < word.length; i++) {
   rword += letters.pop()
 }
 
-if(rword === word){
+if (rword === word) {
   console.log(`${word} is a palindrome`)
 }
-else{
+else {
   console.log(`${word} is not a palindrome`)
 }
 
@@ -42,7 +42,7 @@ var Stack = function() {
 
   //remove values
   this.pop = () => {
-    if(this.count === 0){
+    if (this.count === 0) {
       return undefined
     }
 

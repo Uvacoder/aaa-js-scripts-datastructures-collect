@@ -3,7 +3,7 @@
 
 // simple queue 
 
-function Queue(){
+function Queue() {
   collection = []
 
   // displaying elements
@@ -49,28 +49,28 @@ console.log(q.print())
 
 // Priority queue
 
-function PriorityQueue(){
+function PriorityQueue() {
   var collection = []
 
   this.printCollection = function() {
     (console.log(collection))
   }
   this.enqueue = function(element) {
-    if(this.isEmpty()){
+    if (this.isEmpty()) {
       collection.push(element)
     }
-    else{
+    else {
       var added = false
-      for(var i=0; i<collection.length; i++){
-        if(element[1] < collection[i][1]){
+      for (var i = 0; i < collection.length; i++) {
+        if (element[1] < collection[i][1]) {
           // checking priorities
-          collection.splice(i,0,element)
+          collection.splice(i, 0, element)
           added = true
           break
         }
       }
-      if(!added){
-          collection.push(element)
+      if (!added) {
+        collection.push(element)
       }
     }
   }
@@ -92,8 +92,8 @@ function PriorityQueue(){
   }
 }
 
-var pq = new PriorityQueue(); 
-pq.enqueue(['Python', 2]); 
+var pq = new PriorityQueue();
+pq.enqueue(['Python', 2]);
 pq.enqueue(['C++', 3]);
 pq.enqueue(['JavaScript', 1])
 pq.enqueue(['Go Lang', 2])
