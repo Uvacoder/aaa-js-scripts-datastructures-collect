@@ -3,18 +3,18 @@
 var hash = (string, max) => {
   var hash = 0
   for (var i = 0; i < string.length; i++) {
-    hash += sting.charCodeAt(i)
+    hash += string.charCodeAt(i)
   }
   return hash % max
 }
 
-let HasTable = function() {
+let HashTable = function() {
 
   let storage = []
   const storageLimit = 4 // for instance
 
   this.print = function() {
-    console.log(storege)
+    console.log(storage)
   }
 
   this.add = function(key, value) {
@@ -35,4 +35,41 @@ let HasTable = function() {
       }
     }
   }
+
+  this.remove = function(key) {
+    var index = hash(key, storageLimit)
+    if (storage[index].length === 1 && storage[index][0][0] === key) {
+      delete storage[index]
+    } else {
+      for (var i = 0; i < storage[index]; i++) {
+        if (storage[index][i][0] == key) {
+          delete storage[index][i]
+        }
+      }
+    }
+  }
+
+  this.lookup = function(key) {
+    var index = hash(key, storageLimit)
+    if (storage[index] === undefined) {
+      return undefined
+    } else {
+      for (var i = 0; i < storage[index].length; i++) {
+        if (storage[index][i][0] === key) {
+          return storage[index][i][1]
+        }
+      }
+    }
+  }
+
 }
+
+console.log(hash('giridhar', 10))
+
+let ht = new HashTable()
+ht.add('giridhar', 'human')
+ht.add('husky', 'dog')
+ht.add('t-rex', 'dinosaur')
+ht.add('tux', 'penguin')
+console.log(ht.lookup('tux'))
+ht.print()

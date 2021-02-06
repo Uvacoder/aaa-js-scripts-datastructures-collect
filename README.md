@@ -4,7 +4,7 @@ Implementation of basic Data Structures in JavaScript 🍡 🤹‍♀️ ‍️�
 - ✅ Stacks
 - ✅ Queues and Priority Queues
 - ✅ Binary Search Tree, Traversal & height
-- 🟩 Hash Tables
+- ✅ Hash Tables
 - 🟩 Linked lists
 - 🟩 Trie
 - 🟩 Heap
