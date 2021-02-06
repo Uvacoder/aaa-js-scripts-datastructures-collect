@@ -1,2 +1,2 @@
-run = "node linked_list.js"
+run = "node trie.js"
 language = "node"

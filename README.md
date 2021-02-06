@@ -6,7 +6,7 @@ Implementation of basic Data Structures in JavaScript 🍡 🤹‍♀️ ‍️�
 - ✅ Binary Search Tree, Traversal & height
 - ✅ Hash Tables
 - ✅ Linked lists
-- 🟩 Trie
+- ✅ Trie
 - 🟩 Heap
 - 🟩 Graphs
 
