@@ -1,2 +1,2 @@
-run = "node hash_table.js"
+run = "node linked_list.js"
 language = "node"
