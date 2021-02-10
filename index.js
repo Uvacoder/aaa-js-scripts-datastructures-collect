@@ -1,1 +1,0 @@
-console.log("implementation of basic data structures in JavaScript")
